@@ -5,11 +5,11 @@ const hostname = '127.0.0.1'
 const port = 3041
 
 const server = http.createServer((req, res) => {
-    if (req.url = "/") {
+    if (req.url === "/") {
         res.statusCode = 200
         res.setHeader('Content-type', 'text/plain')
         res.end("hola webonazo")
-    } else if (req.url = "/login") {
+    } else if (req.url === "/login") {
         res.statusCode = 200
         res.setHeader('Content-type', 'text/plain')
         res.end("hola webin")
